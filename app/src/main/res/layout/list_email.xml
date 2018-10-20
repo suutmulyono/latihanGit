@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginRight="6dip"
+        android:layout_marginLeft="6dp"
+        android:layout_centerVertical="true"
+        android:text="A"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/rounded_textview"/>
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:text="lina@jobstret.com"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/job"
+        android:hint="27 Sep"
+        android:layout_alignParentRight="true"
+        android:textAlignment="textEnd"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/massage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/job"
+        android:text="Dokumen"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/massage"
+        android:textColor="@android:color/black"
+        android:hint="Document DAILY JOBS"
+        android:textSize="12sp" />
+
+    <ToggleButton
+        android:id="@+id/job_desc"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/date"
+        android:background="@drawable/ic_action_star"
+        android:checked="true"
+        android:textOn=""
+        android:textOff=""/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/address"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginRight="10dp"
+        android:background="#B6B6B6"
+        android:textSize="12sp"/>
+</RelativeLayout>
